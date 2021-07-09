@@ -1,0 +1,241 @@
+.hero {
+
+    margin-left: 80px;
+    margin-right: 80px;
+
+    &__image {
+        position: relative;
+        bottom: 90px;
+        float: right;
+        width: 550px;
+        height: 686px;
+        background-image: url('/images/Rectangle\ 111.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    &__text h1 {
+        color: $darkBlue;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 45px;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__text .sum-one{
+        color: $Grey;
+        font-weight: normal;
+        font-size: 31px;
+        line-height: 45px;
+        text-align: left;
+      
+    }
+    
+    &__text .sum-two{
+        color: $Blue;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    &__text .button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 27px;
+        color: $White;
+        position: absolute;
+        width: 265px;
+        height: 60px;
+        background: #A8D4DB;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    &__text .button:hover{
+        box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.06), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.04), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.03), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.02), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.02), 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802);
+        transform: scale(1.05,1.05);
+    }
+    
+
+
+
+    @media screen and (max-width: 600px) {
+        .hero{
+            
+            padding: 100%;
+        }
+        &__image {
+            position: relative;
+            bottom: 0px;
+            left: 145px;
+            width: 200px;
+            height: 164px;       
+         }
+         &__text h1 {
+            color: #005F71;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            position: relative;
+            bottom: 180px;
+            right: 65px;
+        }
+        br {
+            display: none;
+        }
+    
+        &__text .sum-one{
+            position: relative;
+            bottom: 200px;
+            right: 70px;
+            color: #6C7375;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: normal;
+            text-align: left;
+          
+        }
+        
+        &__text .sum-two{
+            position: relative;
+            bottom: 202px;
+            right: 69px;
+            color: #445B70;
+            font-size: 12px;
+            line-height: normal;
+        }
+    
+        &__text .button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 27px;
+            color: $White;
+            position: absolute;
+            width: 265px;
+            height: 60px;
+            background: #A8D4DB;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 30px;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .hero{
+            
+            padding: 100%;
+        }
+        &__image {
+            left: 82px; 
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+         }
+         &__text h1 {
+            color: #005F71;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 37px;
+        }
+    
+        br {
+            display: none;
+        }
+    
+        &__text .sum-one{
+        
+            color: #6C7375;
+            font-size: 21px;
+            width: 100vw;
+            padding: 10px;
+          
+        }
+        
+        &__text .sum-two{
+    
+
+            width: 100vw;
+            padding: 10px;
+            color: #445B70;
+            font-size: 21px;
+        }
+   
+        &__text .button{
+            overflow: hidden;
+            flex-direction: row;
+            align-items: center;
+            color: $White;
+            width: 265px;
+            background: #A8D4DB;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;          
+
+            position: relative;
+            bottom: 200px;
+            
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .hero{
+            padding: 100%;
+        }
+        &__image {
+            left: 80px;
+            width: 200px;
+            height: 164px; 
+            
+            width: 100vw;
+            height: 100vh;
+         }
+         &__text h1 {
+            color: #005F71;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 37px;
+        }
+    
+        br {
+            display: none;
+        }
+    
+        &__text .sum-one{        
+            color: #6C7375;
+            font-size: 21px;
+            width: 100vw;
+            padding: 10px;
+          
+        }
+        
+        &__text .sum-two{
+            width: 100vw;
+            padding: 10px;
+            color: #445B70;
+            font-size: 21px;
+        }
+   
+        &__text .button{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 27px;
+            color: $White;
+            width: 265px;
+            height: 60px;
+            background: #A8D4DB;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 30px;
+            justify-self: center;
+            margin-top: 0px;
+            
+        }
+      }
+    }
